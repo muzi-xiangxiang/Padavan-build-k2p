@@ -66,6 +66,14 @@ jobs:
         ######################################################################
         echo "CONFIG_FIRMWARE_INCLUDE_FRPC=y" >> .config #内网穿透FRPC
         echo "CONFIG_FIRMWARE_INCLUDE_ALIDDNS=y" >> .config
+        echo "/CONFIG_FIRMWARE_INCLUDE_NJIT_CLIENT=n" >> .config 
+        echo "/CONFIG_FIRMWARE_INCLUDE_DOGCOM=n" >> .config 
+        echo "/CONFIG_FIRMWARE_INCLUDE_VLMCSD=n" >> .config 
+        echo "/CONFIG_FIRMWARE_INCLUDE_SMBD36=n" >> .config 
+        echo "/CONFIG_FIRMWARE_INCLUDE_XUPNPD=n" >> .config 
+        echo "/CONFIG_FIRMWARE_INCLUDE_HTOP=n" >> .config
+        echo "/CONFIG_FIRMWARE_INCLUDE_FFMPEG_NEW=n" >> .config 
+        echo "/CONFIG_FIRMWARE_INCLUDE_MINIEAP=n" >> .config 
         #########################################################################################
         #自定义添加其它功能请参考源码configs/templates/目录下的config文件。按照上面的格式添加即可
         #格式如下：
